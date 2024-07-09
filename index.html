@@ -5,11 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./assets/styles/style.css">
+  <script src="https://kit.fontawesome.com/ea05bd8970.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
 
+  <section class="mortgage-body">
+    <div class="calculator">
+      <div class="calculator-header">
+        <h1>Mortgage Calculator</h1>
+        <p>Clear All</p>
+      </div>
 
+      <p>Mortgage Amount</p>
+      <div class="money-input"><h3>£</h3><input type="text"></div>
+      <div class="lesser-input-header"><p>Mortgage Term</p><p>Interest Rate</p></div>
+      <div class="lesser-input">
+        <div class="lesser-input-1"><input type="text"><h3>Years</h3></div>
+        <div class="lesser-input-2"><input type="text"><h3>%</h3></div>
+      </div>
+
+      <p>Mortgage-type</p>
+      <div class="repayment"><input type="radio" name="type" id=""><p>Repayment</p></div>
+      <div class="repayment"><input type="radio" name="type" id=""><p>Interest Only</p></div>
+      <h2 id="Claculate"><i class="fa-solid fa-calculator"></i> Calculate Repayments</h2>
+    </div>
+
+    <div class="result-view">
+      <div class="initial-result-view">
+        <img src="./assets/images/illustration-empty.svg" alt="">
+        <h1>Result shown here</h1>
+        <p>Complete the form and click “calculate repayments” to see what 
+          your monthly <br> repayments would be.</p>
+      </div>
+
+      <div class="final-result-view">
+        <h1>Your Result</h1>
+        <p>Your results are shown below based on the information you provided. 
+          To adjust the results, edit the form and click “calculate repayments” again.
+        </p>
+        <div class="content-box">
+          <p>Your monthly repayments</p>
+          <h1 id="monthly-payments"></h1>
+          <section class="break"></section>
+          <p>Total you'll repay over the term</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  Coded by <a href="#">David Nsude</a>.
+<h2>Coded by <a href="#">David Nsude</a>.</h1>
 
 
   <script src="./assets/js/script.js"></script>
