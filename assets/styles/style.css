@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+*{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+}
+
+body{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100%;
+      background-color:#E3F4FC;
+      color: hsl(200, 24%, 40%);
+      font-family: "Plus Jakarta sans" , sans-serif;
+      font-size: 16px;
+}
+
+input{
+      padding: 10px;
+      font-size: 18px;
+      color: hsl(202, 55%, 16%);
+}
+
+input:focus{
+      outline: none;
+      color: hsl(202, 55%, 16%);
+      
+}
+
+h1,h2,h3{
+      color: hsl(202, 55%, 16%);
+}
+/* Mortage-view */
+.mortgage-body{
+      display: flex;
+      flex-direction: row;
+      max-width: 900px;
+      max-height: 550px;
+      height: 100%;
+      width: 100%;
+      background-color: #FFFFFF;
+      border-radius: 20px;
+      scale: 0.9;
+}
+
+/* Calculator section */
+
+.calculator{
+      display: flex;
+      flex-direction: column;
+      background-color: #FFFFFF;
+      width: 50%;
+      height: 100%;
+      padding: 25px;
+      border-radius: 20px 0px 0px 20px ;
+      justify-content: space-between;
+      
+}
+
+.calculator-header{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+}
+.calculator-header h1{
+      color: hsl(202, 55%, 16%);
+}
+.calculator-header p{
+      text-decoration: underline;
+      cursor: pointer;
+}
+
+.calculator-header p:hover{
+      color: #747373;
+}
+
+.money-input{
+      display: flex;
+      height: 48px;
+      border: 1px solid hsl(200, 26%, 54%);
+      border-radius: 5px;
+      cursor: pointer;
+}
+
+.money-input div{
+      width: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color:  hsl(202, 86%, 94%);
+      color: hsl(200, 26%, 54%);
+      border-radius: inherit;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border: none;
+}
+
+.money-input input{
+      padding-left: 5px;
+      width: 100%;
+      border: none;
+      border-radius: inherit;
+      font-size: 18px;
+      color:  hsl(202, 55%, 16%);
+      cursor: pointer;
+}
+
+.money-input input:focus {
+      outline: none;
+}
+
+.lesser-input-header{
+      display: flex;
+      justify-content: space-between;
+      margin-right: 100px;
+}
+
+.lesser-box{
+      display: flex;
+      gap: 5%;
+}
+
+.lesser-input{
+      display: flex;
+}
+.lesser-input input{
+      border-radius: 5px;
+      border: none;
+}
+.lesser-input div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color:  hsl(202, 86%, 94%);
+      color: hsl(200, 26%, 54%);
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border: none;
+}
+
+.input-1{
+      border: 1px solid hsl(200, 26%, 54%);
+      border-radius: 5px;
+      flex-shrink: 0;
+}
+.input-2{
+      border: 1px solid hsl(200, 26%, 54%);
+      border-radius: 5px;
+      flex-shrink: 1;
+}
+.input-1 div{
+      padding: 10px;
+      border-radius: 0px 5px 5px 0px  ;
+}
+.input-2 div{
+      padding: 10px;
+      border-radius: 0px 5px 5px 0px  ;
+}
+
+.input-1 input{
+      width: 100px;
+      height: 48px;
+}
+.input-2 input{
+      height: 48px;
+      width: 150px;
+}
+
+.repayment{
+      display: flex;
+      align-items: center;
+      color: hsl(202, 55%, 16%);
+      font-weight: 700;
+      border: 1px solid hsl(200, 26%, 54%);
+      border-radius: 5px;
+      height: 48px;
+}
+
+.repayment input{
+      margin: 15px;
+      accent-color: hsl(200, 24%, 40%);
+      scale: 1.35;
+}
+
+#calculate{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 16px;
+      padding: 10px 20px;
+      background-color: hsl(61, 70%, 52%);
+      border-radius: 20px;
+      border: none;
+      width: 240px;
+      cursor: pointer;
+}
+#calculate:hover{
+      background-color: hsl(61, 70%, 45%);
+      color: hsl(202, 55%, 16%);
+}
+
+
+
+/* view for result */
+
+
+
+.result-view{
+      display: flex;
+      flex-direction: column;
+      background-color: #133040;
+      color: white;
+      height: 100%;
+      width: 50%;
+      border-radius: 0px 20px 20px 95px ;
+}
+.result-view h1{
+      color: #FFFFFF;
+}
+
+.initial{
+      color: #ffffffa5;
+      background-color: #133040;
+      gap: 20px;
+      text-align: center;
+      width: 100%;
+      padding: 2%;
+      /* display: none; */
+      justify-content: center;
+      align-items: center;
+}
+
+
+
+
+
+.final{
+      display: flex;
+      display: none;
+      padding: 10%;
+      flex-direction: column;
+      width: 100%;
+      gap: 1.5rem;
+}
+.final p{
+      color: rgba(255, 255, 255, 0.648);
+}
+
+.content-box{
+      border-radius: 2.5%;
+      background-color: hsl(201, 54%, 14%);
+      border-top: hsl(61, 70%, 52%) 0.35rem solid;
+      height: 55%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 5%;
+      gap: 1rem;
+}
+
+.content-box section{
+      border: 0.5px solid #ffffffb3;
+}
+.content-box h1{
+      font-size: 3rem;
+      color: hsl(61, 70%, 52%);
+}
+.content-box h3{
+      color: #ffffff;
+      font-size: 1.6rem;
+}
+
+#footer{
+      display:block;
+}

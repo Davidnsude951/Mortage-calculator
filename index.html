@@ -18,45 +18,47 @@
       </div>
 
       <p>Mortgage Amount</p>
-      <div class="money-input"><h3>£</h3><input type="text"></div>
+      <div class="money-input"><div><h3>£</h3></div><input id="mortgageAmount" type="text"></div>
+
       <div class="lesser-input-header"><p>Mortgage Term</p><p>Interest Rate</p></div>
-      <div class="lesser-input">
-        <div class="lesser-input-1"><input type="text"><h3>Years</h3></div>
-        <div class="lesser-input-2"><input type="text"><h3>%</h3></div>
+
+      <div class="lesser-box">
+        <div class="lesser-input input-1"><input id="mortgageTerm" type="text"><div><h3>years</h3></div></div>
+        <div class="lesser-input input-2"><input id="interestRate" type="text"><div><h3>%</h3></div></div>
       </div>
 
       <p>Mortgage-type</p>
-      <div class="repayment"><input type="radio" name="type" id=""><p>Repayment</p></div>
-      <div class="repayment"><input type="radio" name="type" id=""><p>Interest Only</p></div>
-      <h2 id="Claculate"><i class="fa-solid fa-calculator"></i> Calculate Repayments</h2>
+      <div class="repayment"><label><input type="radio" name="type" id="">Repayment</label></div>
+      <div class="repayment"><label><input type="radio" name="type" id="">Interest Only</label></div>
+      <h3 id="calculate"><i class="fa-solid fa-calculator"></i> Calculate Repayments</h3>
     </div>
 
     <div class="result-view">
-      <div class="initial-result-view">
+      <div class="initial result-view">
         <img src="./assets/images/illustration-empty.svg" alt="">
         <h1>Result shown here</h1>
         <p>Complete the form and click “calculate repayments” to see what 
-          your monthly <br> repayments would be.</p>
+          your monthly  repayments would be.</p>
       </div>
 
-      <div class="final-result-view">
+      <div class="final result-view">
         <h1>Your Result</h1>
         <p>Your results are shown below based on the information you provided. 
           To adjust the results, edit the form and click “calculate repayments” again.
         </p>
         <div class="content-box">
           <p>Your monthly repayments</p>
-          <h1 id="monthly-payments"></h1>
+          <h1 id="monthly-payments">£0</h1>
           <section class="break"></section>
           <p>Total you'll repay over the term</p>
+          <h3 id="repayOverTerm">£0</h3>
         </div>
       </div>
     </div>
 
   </section>
 
-  Coded by <a href="#">David Nsude</a>.
-<h2>Coded by <a href="#">David Nsude</a>.</h1>
+<p id="footer">  Coded by <a href="#">David Nsude</a>.</p>
 
 
   <script src="./assets/js/script.js"></script>
