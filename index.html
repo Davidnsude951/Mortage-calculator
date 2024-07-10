@@ -14,44 +14,51 @@
     <div class="calculator">
       <div class="calculator-header">
         <h1>Mortgage Calculator</h1>
-        <p>Clear All</p>
+        <p id="reset">Clear All</p>
       </div>
 
       <p>Mortgage Amount</p>
-      <div class="money-input"><div><h3>£</h3></div><input id="mortgageAmount" type="text"></div>
+      <div class="money-input"><div><h3>£</h3></div><input id="mortgageAmount" type="number"></div>
+
+      <p class="error">error</p>
 
       <div class="lesser-input-header"><p>Mortgage Term</p><p>Interest Rate</p></div>
 
       <div class="lesser-box">
-        <div class="lesser-input input-1"><input id="mortgageTerm" type="text"><div><h3>years</h3></div></div>
-        <div class="lesser-input input-2"><input id="interestRate" type="text"><div><h3>%</h3></div></div>
+        <div class="lesser-input input-1"><input id="mortgageTerm" type="number"><div><h3>years</h3></div></div>
+        <div class="lesser-input input-2"><input id="interestRate" type="number"><div><h3>%</h3></div></div>
       </div>
 
+      <p class="error">error</p>
+
       <p>Mortgage-type</p>
-      <div class="repayment"><label><input type="radio" name="type" id="">Repayment</label></div>
-      <div class="repayment"><label><input type="radio" name="type" id="">Interest Only</label></div>
+      <div class="repayment"><label><input type="radio" name="type" id="repayment">Repayment</label></div>
+      <div class="repayment"><label><input type="radio" name="type" id="Interest">Interest Only</label></div>
+
+      <p class="error">error</p>
+
       <h3 id="calculate"><i class="fa-solid fa-calculator"></i> Calculate Repayments</h3>
     </div>
 
     <div class="result-view">
-      <div class="initial result-view">
+      <div id="initial" class="initial result-view">
         <img src="./assets/images/illustration-empty.svg" alt="">
         <h1>Result shown here</h1>
         <p>Complete the form and click “calculate repayments” to see what 
           your monthly  repayments would be.</p>
       </div>
 
-      <div class="final result-view">
+      <div id="final" class="final result-view">
         <h1>Your Result</h1>
         <p>Your results are shown below based on the information you provided. 
           To adjust the results, edit the form and click “calculate repayments” again.
         </p>
         <div class="content-box">
           <p>Your monthly repayments</p>
-          <h1 id="monthly-payments">£0</h1>
+          <h1 id="monthlyPayments">£0</h1>
           <section class="break"></section>
           <p>Total you'll repay over the term</p>
-          <h3 id="repayOverTerm">£0</h3>
+          <h3 id="totalPayment">£0</h3>
         </div>
       </div>
     </div>
