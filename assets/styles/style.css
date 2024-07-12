@@ -54,7 +54,7 @@ h1,h2,h3{
 .calculator{
       display: flex;
       flex-direction: column;
-      background-color: #ffffff28;
+      background-color: white;
       width: 50%;
       height: 100%;
       padding: 25px;
