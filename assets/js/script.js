@@ -47,14 +47,12 @@ document.getElementById(`calculate`).addEventListener(`click`,()=> {
 
 
 setInterval(function clearError(){
-      if(document.getElementById("mortgageAmount").value !==``|| document.getElementById("mortgageAmount").value >0){
             document.querySelector(".error").style.display= "none";
-      }
-},1000)
+},4000)
 
 document.getElementById(`reset`).addEventListener(`click`,()=>{
-      document.getElementById("mortgageAmount").value = 0;
-      document.getElementById("mortgageTerm").value = 0;
-      document.getElementById("intrestRate").value = 0;
-      console.log(`haiiiiiiiiiiiiiii`)
+      document.getElementById("mortgageAmount").value = ``;
+      document.getElementById("mortgageTerm").value = ``;
+      document.getElementById("interestRate").value = ``;
+      console.log(`onichhhhaaaaannnn`)
 })
