@@ -14,7 +14,7 @@ body{
       align-items: center;
       height: 100dvh;
       width: 100%;
-      background-color:#E3F4FC;
+      background-color: hsl(202, 86%, 94%);
       color: hsl(200, 24%, 40%);
       font-family: "Plus Jakarta sans" , sans-serif;
       font-size: 16px;
@@ -45,7 +45,8 @@ h1,h2,h3{
       width: 100%;
       background-color: #FFFFFF;
       border-radius: 20px;
-      scale: 0.95;
+      scale: 0.99;
+      box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
 }
 
 /* Calculator section */
@@ -53,7 +54,7 @@ h1,h2,h3{
 .calculator{
       display: flex;
       flex-direction: column;
-      background-color: #FFFFFF;
+      background-color: #ffffff28;
       width: 50%;
       height: 100%;
       padding: 25px;
