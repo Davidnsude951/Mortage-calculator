@@ -278,7 +278,15 @@ h1,h2,h3{
 }
 
 #footer{
-      display:block;
+      display: flex;
+      font-size: 0.9rem;
+      align-self: center;
+      gap: 0.5rem;
+      z-index: 1;
+      color: #ffffffa2;
+}
+#footer a{
+      color: rgba(0, 255, 0, 0.524);
 }
 
 .error{
