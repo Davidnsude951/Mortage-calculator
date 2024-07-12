@@ -12,7 +12,7 @@ body{
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      height: 100dvh;
       width: 100%;
       background-color:#E3F4FC;
       color: hsl(200, 24%, 40%);
@@ -262,6 +262,7 @@ h1,h2,h3{
       flex-direction: column;
       padding: 5%;
       gap: 1rem;
+      overflow-x: hidden;
 }
 
 .content-box section{
@@ -323,8 +324,6 @@ h1,h2,h3{
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
-            width: 100dvw;
-            height: 100dvh;
       }
       .mortgage-body{
             display: flex;
@@ -332,12 +331,13 @@ h1,h2,h3{
             align-items: center;
             background-color: transparent;
             width: 100%;
+            height: 100vh;
       }
       .calculator{
             border-radius: 0px;
             gap: 20px;
             width: 100%;
-            height: 100%;
+            height: 600px;
       }
       .lesser-input-header{
             justify-content: space-between;
@@ -346,18 +346,26 @@ h1,h2,h3{
    
       .result-view{
             border-radius: 0px;
-            height: 100%;
+            height: 600px;
             width: 100%;
       }
       .content-box{
             height: 100%;
+            
       }
       #calculate{
             width: 100%;
             justify-content: center;
+            gap: 1rem;
       }
       #footer{
-            display: none;
+            display: flex;
+            gap: 1rem;
+            z-index: 1;
+            color: #FFFFFF;
+      }
+      #footer a{
+            color: lime;
       }
 
 }
