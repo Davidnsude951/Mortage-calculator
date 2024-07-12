@@ -66,6 +66,7 @@ h1,h2,h3{
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      align-items: center;
 }
 .calculator-header h1{
       color: hsl(202, 55%, 16%);
@@ -365,6 +366,9 @@ h1,h2,h3{
             width: 100%;
             justify-content: center;
             gap: 1rem;
+      }
+      #reset{
+            font-size: 0.9rem;
       }
       #footer{
             display: flex;
